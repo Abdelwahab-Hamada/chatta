@@ -200,3 +200,8 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOW_CREDENTIALS = True
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://abdelwahabyoussef.github.io',
+    'https://web-production-7e40.up.railway.app',
+]
