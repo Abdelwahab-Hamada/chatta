@@ -49,3 +49,4 @@ typing_extensions==4.3.0
 tzdata==2022.2
 yarl==1.8.1
 zope.interface==5.4.0
+whitenoise
