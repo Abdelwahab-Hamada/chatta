@@ -3,8 +3,8 @@ from django.utils.encoding import force_str
 django.utils.encoding.force_text = force_str
 
 from pathlib import Path
-import os
 from decouple import config
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -14,10 +14,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SK')
+SECRET_KEY = os.environ['SK']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG')
+DEBUG = os.environ['DEBUG']
 
 ALLOWED_HOSTS = [
     'web-production-7e40.up.railway.app',

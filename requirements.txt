@@ -12,7 +12,7 @@ charset-normalizer==2.1.1
 constantly==15.1.0
 cryptography==38.0.1
 daphne==3.0.2
-decouple==0.0.7
+python-decouple
 dj-database-url
 Django==4.1.1
 django-channels-graphql-ws
