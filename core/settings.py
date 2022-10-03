@@ -19,7 +19,11 @@ SECRET_KEY = config('SK')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'web-production-7e40.up.railway.app',
+    '127.0.0.1',
+    'localhost',
+]
 
 
 # Application definition
