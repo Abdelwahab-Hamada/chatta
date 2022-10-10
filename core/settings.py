@@ -196,12 +196,12 @@ GRAPHQL_JWT = {
 CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:3000',
     'http://localhost:3000',
-    'https://abdelwahabyoussef.github.io',
+    'https://abdelwahab-hamada.github.io',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://abdelwahabyoussef.github.io',
+    'https://abdelwahab-hamada.github.io',
     'https://web-production-7e40.up.railway.app',
 ]
