@@ -53,8 +53,6 @@ class Register(graphene.Mutation):
             username=username,
             password=password)
 
-        Log.objects.create(user=user)
-
         return Register(is_registered=True)
 
 class ObtainJSONWebToken(graphql_jwt.JSONWebTokenMutation):

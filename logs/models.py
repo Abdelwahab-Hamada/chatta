@@ -1,5 +1,10 @@
 from django.db import models
 from django.conf import settings
+from django.db.models.signals import (
+    post_save,
+    pre_save
+)
+from django.dispatch import receiver
 
 from django.utils import timezone
 import humanize
@@ -43,3 +48,9 @@ class Log(models.Model):
         print(self.user,'is online')
 
         self.save()
+
+@receiver(post_save,sender=settings.AUTH_USER_MODEL)
+def user_created_handler(sender,instance,created,*args,**kwargs):
+    if created:
+        Log.objects.create(user=instance)
+        print('user`s logs created')
